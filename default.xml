@@ -13,7 +13,7 @@
   <project path="kernel/oneplus/sm8450-modules" name="android_kernel_oneplus_sm8450-modules" remote="opudon" />
   <project path="kernel/oneplus/sm8450-devicetrees" name="android_kernel_oneplus_sm8450-devicetrees" remote="opudon" />
   <remove-project name="platform/external/wpa_supplicant_8" />
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="sa" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="sa" />
   <project path="vendor/oneplus/udon" name="vendor_oneplus_udon" remote="mp" />
   <project path="vendor/oneplus/sm8450-common" name="vendor_oneplus_sm8450-common" remote="mp" />
   <project path="vendor/oneplus/firmware-udon" name="vendor_oneplus_firmware-udon" remote="mp" />
