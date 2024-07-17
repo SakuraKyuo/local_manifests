@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="sakura" fetch="https://github.com/sakurakyuo" revision="UDC" />
+  <remote name="toyo" fetch="https://github.com/Amiya-project" revision="14-qpr3" />
+  <remote name="los" fetch="https://github.com/LineageOS" revision="lineage-21" />
 
 
-  <project path="device/xiaomi/grus" name="device_xiaomi_grus_personal" remote="sakura" />
+  <project path="device/xiaomi/sm8250-common" name="android_device_xiaomi_sm8250-common" remote="toyo" />
+  <project path="device/xiaomi/alioth" name="android_device_xiaomi_alioth" remote="toyo" />
+  <project path="vendor/xiaomi/alioth" name="proprietary_vendor_xiaomi_alioth" remote="toyo" />
+  <project path="vendor/xiaomi/sm8250-common" name="proprietary_vendor_xiaomi_sm8250-common" remote="toyo" />
+  <project path="kernel/xiaomi/sm8250" name="android_kernel_xiaomi_sm8250" remote="los" />
 
 </manifest>
