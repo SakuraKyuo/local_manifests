@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="op12" fetch="https://github.com/OnePlus-12-Development" revision="lineage-21.0-caf-sm8650" />
+  <remote name="op12" fetch="https://github.com/OnePlus-12-Development" revision="lineage-21.0" />
   <remote name="los" fetch="https://gitlab.com/LineageOS" revision="lineage-21" />
   <remote name="sa" fetch="https://github.com/sakurakyuo" revision="lineage-21" />
 
@@ -10,13 +10,35 @@
   <project path="device/oneplus/sm8650-common" name="android_device_oneplus_sm8650-common" remote="sa" />
   <project path="device/oneplus/corvette-kernel" name="android_device_oneplus_corvette-kernel" remote="sa" />
 
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" remote="op12" />
-  <project path="hardware/qcom-caf/sm8650/media" name="android_hardware_qcom_media" remote="op12" />
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="op12" >
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/media" name="android_hardware_qcom_media" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" remote="op12" revision="lineage-21.0-caf" />
+
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="op12" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="op12" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="op12" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="op12" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom_opensource_fm-commonsys" remote="op12" />
+  <project path="vendor/qcom/opensource/commonsys/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="op12" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="android_vendor_qcom_opensource_core-utils-sys" remote="op12" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom_opensource_core-utils-vendor" remote="op12" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="op12" revision="lineage-21.0-caf-sm8650" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="op12" />
+  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" remote="op12" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="op12" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="op12" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" remote="op12" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="op12" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="op12" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="op12" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="op12" />
+  
  
 
 </manifest>
