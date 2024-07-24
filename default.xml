@@ -3,6 +3,7 @@
 
   <remote name="los" fetch="https://gitlab.com/LineageOS" revision="lineage-21" />
   <remote name="sa" fetch="https://github.com/sakurakyuo" revision="lineage-21" />
+  <remote name="ximi" fetch="https://github.com/Xiaomi-SM8650" revision="lineage-21.0-caf-sm8650" />
   <remote  name="waffle"
            fetch="https://github.com/Oneplus-12-SM8650-Development"
            revision="lineage-21.0-caf-sm8650" />
@@ -10,6 +11,7 @@
   <project path="device/oneplus/corvette" name="android_device_oneplus_corvette" remote="sa" />
   <project path="device/oneplus/sm8650-common" name="android_device_oneplus_sm8650-common" remote="sa" />
   <project path="device/oneplus/corvette-kernel" name="android_device_oneplus_corvette-kernel" remote="sa" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" remote="ximi" />
 
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="waffle" revision="lineage-21.0" >
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
