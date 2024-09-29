@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote name="los" fetch="https://gitlab.com/LineageOS" revision="lineage-21" />
-  <remote name="sa" fetch="https://github.com/sakurakyuo" revision="lineage-21" />
-  <remote name="ximi" fetch="https://github.com/Xiaomi-SM8650" revision="lineage-21.0-caf-sm8650" />
-  <remote  name="waffle"
-           fetch="https://github.com/Oneplus-12-SM8650-Development"
-           revision="lineage-21.0-caf-sm8650" />
-
-  <project path="device/oneplus/corvette" name="android_device_oneplus_corvette" remote="sa" />
-  <project path="device/oneplus/sm8650-common" name="android_device_oneplus_sm8650-common" remote="sa" />
-  <project path="device/oneplus/corvette-kernel" name="android_device_oneplus_corvette-kernel" remote="sa" />
-  <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" remote="ximi" />
-
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="waffle" revision="lineage-21.0" >
-    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
-  </project>
-
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom,lanai-audio" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom,lanai-audio" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" groups="qcom,lanai-audio" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lanai-vendor" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" groups="qcom,lanai-vendor" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" groups="qcom" remote="waffle" />
-  <project path="hardware/qcom-caf/sm8650/media" name="android_hardware_qcom_media" groups="qcom,lanai-vendor" remote="waffle" />
-
-  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,lanai-audio" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/commonsys/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,lanai-video" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,lanai-vendor" remote="waffle" revision="lineage-21.0" />
   
- 
+  <remote name="sa" fetch="https://github.com/opace3pro" revision="yaap-14" />
+  
+  <project path="device/oneplus/corvette" name="device_oneplus_corvette" remote="sa" revision="yaap-14_inline" />
+  <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="sa" revision="yaap-14_inline" />
+  <project path="device/oneplus/corvette-kernel" name="device_oneplus_corvette-kernel" remote="sa" />
+
+  <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="sa" revision="fourteen" />
+
+  <project path="vendor/oneplus/corvette" name="vendor_oneplus_corvette" remote="sa" revision="fourteen" />
+  <project path="vendor/oneplus/sm8650-common" name="vendor_oneplus_sm8650-common" remote="sa" revision="fourteen" />
 
 </manifest>
