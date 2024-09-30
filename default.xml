@@ -4,7 +4,7 @@
   <remote name="sa" fetch="https://github.com/opace3pro" revision="yaap-14" />
   
   <project path="device/oneplus/corvette" name="device_oneplus_corvette" remote="sa" revision="yaap-14_inline" />
-  <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="sa" revision="yaap-14_inline" />
+  <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common_new" remote="sa" revision="yaap-14_inline" />
   <project path="device/oneplus/corvette-kernel" name="device_oneplus_corvette-kernel" remote="sa" />
 
   <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="sa" revision="fourteen" />
