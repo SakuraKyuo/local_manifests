@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote name="sa" fetch="https://github.com/opace3pro" revision="yaap-15" />
+  <remote name="sa" fetch="ssh://git@github.com/opace3pro" revision="yaap-15" />
   
   <project path="device/oneplus/corvette" name="device_oneplus_corvette" remote="sa" />
   <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common_new" remote="sa" />
@@ -12,6 +12,6 @@
   <project path="kernel/oneplus/sm8650" name="kernel_oneplus_sm8650" remote="sa" revision="fourteen" />
 
   <project path="vendor/oneplus/corvette" name="vendor_oneplus_corvette" remote="sa" revision="fourteen" />
-  <project path="vendor/oneplus/sm8650-common" name="vendor_oneplus_sm8650-common" remote="sa" revision="fourteen" />
+  <project path="vendor/oneplus/sm8650-common" name="vendor_oneplus_sm8650-common" remote="sa" />
 
 </manifest>
